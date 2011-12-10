@@ -30,7 +30,7 @@ body {
 	background:#000000;
 	color:#222;
 	font-size:15px;
-	text-align: center;
+	text-align: left;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -53,21 +53,21 @@ footer {
 	width: 710px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 40px;
+	padding: 20px;
 }
+
 header {
 	color:#222;
 	font-size:20px;
 	text-align: center;
-	width: 800px;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 80px;
+	padding: 20px;
 }
 
 nav {
-float: right;
+/*float: right; */
 background: white;
 padding: 0 0.7em;
 white-space: nowrap;
@@ -90,7 +90,7 @@ font-weight: bold;
 }
 
 nav ul li a:visited {
-color: #000000;
+color: #fff;
 }
 
 nav ul li a:hover {
@@ -156,6 +156,17 @@ font-weight: bold;
 padding: 20px;
 }
 
+a.header_button{
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+color: #fff;
+background: #000000;
+font-size: 80%;
+font-weight: bold;
+padding: 5px;
+}
+
 .round {
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
@@ -168,12 +179,18 @@ padding: 20px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
 padding: 20px;
+}
 
+.round2 {
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+padding: 5px;
 }
 
 /* Just to extend each column */
 #inner a:visited, a {
-	color:#000;
+	color:#fff;
 	text-decoration:none;
 	cursor:default;}
 #inner a span {
