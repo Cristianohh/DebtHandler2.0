@@ -25,10 +25,15 @@ em {font-weight:bold;}
 
 body {
 	margin:0px;
-	padding:0px;
-	background:#000000;
-	font-family:verdana;
+	padding:10px;
 	font-size:12px;
+	background:#000000;
+	color:#222;
+	font-size:15px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* The header and footer */
 
@@ -37,6 +42,7 @@ background:#e77200;
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
+padding:10px;
 }
 
 footer {
@@ -47,15 +53,17 @@ footer {
 	width: 710px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 40px;
 }
 header {
 	color:#222;
 	font-size:20px;
 	text-align: center;
+	width: 800px;
 	margin-top: 10px;
-	width: 710px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 80px;
 }
 
 nav {
@@ -98,7 +106,7 @@ text-decoration: underline;
 #container1 {
 	position:relative;
 	display:block;
-	background:#838B8B;;
+	background:#838B8B;
 	}
 #inner {
 	display:block;
@@ -115,10 +123,11 @@ text-decoration: underline;
 #center {
 	margin-left:200px;
 	margin-right:200px;
-	background:#C1CDCD;
+	background:#838B8B;
 	position:relative;
 	display:block;
 	height:1%;}
+	
 .clear {
 	clear:both;}
 
@@ -135,10 +144,31 @@ font-weight: bold;
 padding: 20px;
 }
 
+a.newacc_button{
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+width: 190px;
+color: #fff;
+background: #000000;
+font-size: 150%;
+font-weight: bold;
+padding: 20px;
+}
+
 .round {
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
+padding: 20px;
+}
+
+.round1 {
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+padding: 20px;
+
 }
 
 /* Just to extend each column */
