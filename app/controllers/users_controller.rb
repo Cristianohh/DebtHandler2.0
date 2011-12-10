@@ -37,13 +37,17 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
-      redirect_to @user, :flash => { :success => "Welcome to the Sample App!" }
+      redirect_to @user, :flash => { :success => "Welcome to Debt Handler!" }
     else
       @title = "Sign up"
       render 'new'
     end
   end
-  
+ 
+  def account
+    @title = "Accounts"
+  end
+   
   def edit
     @title = "Edit user"
   end
