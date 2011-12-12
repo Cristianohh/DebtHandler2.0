@@ -20,8 +20,7 @@ SampleApp::Application.routes.draw do
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
   
-  match '/account', :to => 'users#account'
-  match '/newaccount', :to => 'users#newaccount'
+
   match '/purchase', :to => 'transactions#new'
   match '/transactionall', :to => 'transactions#show'
   

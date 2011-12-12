@@ -48,7 +48,11 @@ class User < ActiveRecord::Base
   def feed
     Micropost.from_users_followed_by(self)
   end
-  
+
+  def trans
+    Transaction.from_users_user_id(self)
+  end
+    
   def following?(followed)
     relationships.find_by_followed_id(followed)
   end
