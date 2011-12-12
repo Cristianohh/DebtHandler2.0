@@ -1,7 +1,5 @@
 SampleApp::Application.routes.draw do
 
-  resources :transactions
-
   resources :users do
     member do
       get :following, :followers
@@ -10,6 +8,7 @@ SampleApp::Application.routes.draw do
   
   resources :sessions,      :only => [:new, :create, :destroy]
   resources :microposts,    :only => [:create, :destroy]
+  resources :transactions,  :only => [:new, :create, :destroy]
   resources :relationships, :only => [:create, :destroy]
   
   root :to => "pages#home"
@@ -23,7 +22,7 @@ SampleApp::Application.routes.draw do
   
   match '/account', :to => 'users#account'
   match '/newaccount', :to => 'users#newaccount'
-  match '/newtransaction', :to => 'transactions#newtransaction'
+  match '/newtransaction', :to => 'transactions#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

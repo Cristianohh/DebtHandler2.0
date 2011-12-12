@@ -4,7 +4,7 @@
     <ul>
       <li><%= link_to "Home", root_path, :class => "header_button round2" %></li>
       <% if signed_in? %>
-        <li><%= link_to "New Transaction", newtransaction_path(current_user), :class => "header_button round2" %></li>
+        <li><%= link_to "New Transaction", newtransaction_path, :class => "header_button round2" %></li>
         <li><%= link_to "Profile", current_user, :class => "header_button round2" %></li>
         <li><%= link_to "Accounts", account_path(current_user), :class => "header_button round2" %></li>
         <li><%= link_to "Users", users_path, :class => "header_button round2" %></li>

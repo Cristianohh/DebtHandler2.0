@@ -25,7 +25,7 @@ class TransactionsController < ApplicationController
   # GET /transactions/new.json
   def new
     @transaction = Transaction.new
-
+    @title = "New Transaction"
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @transaction }

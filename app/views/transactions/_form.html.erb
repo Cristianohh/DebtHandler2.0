@@ -12,27 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id %><br />
-    <%= f.number_field :id %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label 'Item Purchased' %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
+    <%= f.label 'Description of purchase' %><br />
     <%= f.text_field :description %>
   </div>
   <div class="field">
-    <%= f.label :user_id %><br />
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :accounttype %><br />
+    <%= f.label 'Account name (Discover Card, Master Card ETC)' %><br />
     <%= f.text_field :accounttype %>
   </div>
   <div class="field">
-    <%= f.label :amount %><br />
+    <%= f.label 'How much did you spend? (Integers Only)' %><br />
     <%= f.number_field :amount %>
   </div>
   <div class="actions">
