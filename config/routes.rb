@@ -6,7 +6,8 @@ SampleApp::Application.routes.draw do
     end
   end
   
-  resources :transactions,  :only => [:new, :create, :destroy]
+  
+  resources :transactions
   resources :sessions,      :only => [:new, :create, :destroy]
   resources :microposts,    :only => [:create, :destroy]
   resources :relationships, :only => [:create, :destroy]
@@ -22,7 +23,6 @@ SampleApp::Application.routes.draw do
   
 
   match '/purchase', :to => 'transactions#new'
-  match '/transactionall', :to => 'transactions#show'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
