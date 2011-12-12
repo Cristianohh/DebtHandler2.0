@@ -88,7 +88,7 @@ describe User do
     end
     
     it "should reject short passwords" do
-      short = "a" * 5
+      short = "a" * 3
       hash = @attr.merge(:password => short, :password_confirmation => short)
       User.new(hash).should_not be_valid
     end
@@ -118,6 +118,7 @@ describe User do
       @user.should respond_to(:salt)
     end
 
+
     describe "has_password? method" do
 
       it "should exist" do
@@ -132,7 +133,8 @@ describe User do
         @user.has_password?("invalid").should be_false
       end
     end
-    
+   
+   
     describe "authenticate method" do
       
       it "should exist" do
@@ -173,6 +175,21 @@ describe User do
     end
   end
 
+    describe "num accounts" do
+
+    before(:each) do
+      @user = User.create!(@attr)
+    end
+
+    it "should have a numaccounts attribute" do
+      @user.should respond_to(:numaccounts)
+    end
+
+    it "should set the numaccounts attribute" do
+      @user.numaccounts.should_not be_blank
+    end
+   end
+   
   describe "micropost associations" do
     
     before(:each) do
