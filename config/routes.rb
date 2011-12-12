@@ -23,7 +23,7 @@ SampleApp::Application.routes.draw do
   
   match '/account', :to => 'users#account'
   match '/newaccount', :to => 'users#newaccount'
-  match '/newtransaction', :to => 'users#newtransaction'
+  match '/newtransaction', :to => 'transactions#newtransaction'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
