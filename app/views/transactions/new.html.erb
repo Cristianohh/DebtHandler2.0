@@ -3,3 +3,12 @@
 <%= render 'form' %>
 
 <%= link_to 'Back', transactions_path %>
+
+
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <%= render 'fields', :f => f %>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
