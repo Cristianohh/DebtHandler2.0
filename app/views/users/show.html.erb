@@ -12,6 +12,17 @@
         </table>
         <%= will_paginate @microposts %>
       <% end %>
+      
+      <h1>Recent Transactions:</h1>
+      
+      <% if @user.transactions.any? %>
+        <table>
+          <%= render @transactions %>
+        </table>
+        <%= will_paginate @transactions %>
+      <% end %>
+      
+      
     </td>
     <td class="sidebar round">
       <strong>Name</strong> <%= @user.name %><br />
